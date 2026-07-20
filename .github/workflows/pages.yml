@@ -1,0 +1,50 @@
+name: UrkundenPilot-Website veröffentlichen
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "website/**"
+      - "assets/UrkundenPilot-logo.png"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.repository == 'bstnmnrd/UrkundenPilot-Website'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: GitHub Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Website zusammenstellen
+        run: |
+          mkdir -p _site/assets
+          cp website/*.html website/robots.txt _site/
+          cp website/assets/site.css _site/assets/
+          cp assets/UrkundenPilot-logo.png _site/assets/
+
+      - name: Website-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Website veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
