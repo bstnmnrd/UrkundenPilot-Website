@@ -33,11 +33,14 @@ Website-Repository übernommen.
 Im GitHub-Repository einmalig unter `Settings → Pages` als Quelle `GitHub Actions`
 auswählen. Nach einem Push auf `main` wird die Seite automatisch aktualisiert.
 
-Ohne eigene Domain lautet die Adresse voraussichtlich:
+Die öffentliche Hauptadresse lautet:
 
 ```text
-https://bstnmnrd.github.io/UrkundenPilot-Website/
+https://urkundenpilot.de/
 ```
+
+Die technische GitHub-Pages-Adresse bleibt im Hintergrund bestehen und wird auf die
+eigene Domain weitergeleitet.
 
 Vor einer öffentlichen kommerziellen Nutzung sind Impressum und Datenschutzerklärung
 rechtlich zu prüfen. GitHub Pages ist für eine Projekt- und Pilotseite geeignet, aber
