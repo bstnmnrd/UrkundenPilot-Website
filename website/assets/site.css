@@ -73,7 +73,7 @@ nav a:hover, .back-link:hover { color: var(--blue); }
 .check-list.compact { display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; color: var(--ink-soft); font-size: .92rem; }
 
 .hero-visual { display: flex; flex-direction: column; align-items: center; }
-.pilot-card { width: 100%; padding: clamp(1.4rem, 4vw, 2.15rem); border: 1px solid rgba(217,226,236,.9); border-radius: 28px; background: rgba(255,255,255,.94); box-shadow: var(--shadow); transform: rotate(1.2deg); }
+.pilot-card { width: 100%; padding: clamp(1.4rem, 4vw, 2.15rem); border: 1px solid rgba(217,226,236,.9); border-radius: 28px; background: rgba(255,255,255,.94); box-shadow: var(--shadow); }
 .pilot-card-head { display: flex; align-items: center; gap: 1rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); }
 .pilot-card-head img { width: 68px; height: 68px; object-fit: contain; filter: drop-shadow(0 8px 12px rgba(11,59,102,.12)); }
 .pilot-card-head strong, .pilot-card-head span { display: block; }
@@ -89,7 +89,7 @@ nav a:hover, .back-link:hover { color: var(--blue); }
 .result-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; padding: 1rem; border-radius: 14px; background: var(--surface); color: var(--ink-soft); font-size: .78rem; text-align: center; }
 .dot { display: inline-block; width: 8px; height: 8px; margin-right: .25rem; border-radius: 50%; }
 .dot.gold { background: var(--gold); } .dot.blue { background: var(--blue); } .dot.green { background: var(--green); }
-.privacy-stamp { display: inline-flex; align-items: center; gap: .5rem; margin: -10px auto 0; padding: .65rem 1rem; border-radius: 99px; color: #245c40; background: #e9f7ef; box-shadow: 0 8px 20px rgba(47,133,90,.12); font-size: .83rem; font-weight: 750; transform: rotate(-1deg); }
+.privacy-stamp { display: inline-flex; align-items: center; gap: .5rem; margin: -10px auto 0; padding: .65rem 1rem; border-radius: 99px; color: #245c40; background: #e9f7ef; box-shadow: 0 8px 20px rgba(47,133,90,.12); font-size: .83rem; font-weight: 750; }
 .privacy-stamp span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; color: #fff; background: var(--green); }
 
 .trust-strip { border-top: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7; background: #fff; }
