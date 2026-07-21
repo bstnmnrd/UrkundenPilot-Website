@@ -38,7 +38,7 @@ jobs:
           mkdir -p _site/assets
           cp website/*.html website/robots.txt _site/
           cp website/assets/site.css _site/assets/
-          cp assets/UrkundenPilot-logo.png _site/assets/
+          cp assets/UrkundenPilot-logo.png assets/UrkundenPilot-signatur.png _site/assets/
 
       - name: Website-Artefakt hochladen
         uses: actions/upload-pages-artifact@v3
