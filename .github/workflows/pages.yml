@@ -7,6 +7,7 @@ on:
     paths:
       - "website/**"
       - "assets/UrkundenPilot-logo.png"
+      - "assets/UrkundenPilot-signatur.png"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
